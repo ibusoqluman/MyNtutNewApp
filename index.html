@@ -1,59 +1,83 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>大大安安想去哪？</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ibu</title>
+<link rel="stylesheet" type="text/css" href="css/csshake.min.css">
+<link type="text/css" href="css/csshake.min.css">
 <style type="text/css">
+
+
 body {
-	background-image: url();
-	background-repeat: repeat;
-	
+	background-image: url(n5.jpg);
+	background-position:50% 50%;
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+
+
 }
-html, body , .outer, .inner {
-    height:100%;
-    width:100%;
-    margin:0;
-} 
+body,td,th {
+	font-family: "MS Serif", "New York", serif;
+	font-weight: bold;
+	color: #000;
+	font-size: 36px;
+}
+.color {
+	color: #9C0;
+}
+
 </style>
 </head>
 
 <body>
 
-<script type="text/javascript">
-function AlertIt(){
-	//亂數
-	var myrandom = Math.round(Math.random()*2)
-	//一些白痴的話，用矩陣 Array
-	var messages = new Array()
-	messages[0] = "大大安安，想怎樣？"
-	messages[1] = "今天天氣好，想怎樣？"
-	messages[2] = "無聊嗎？來看影片～"
-	//連結清單
-	var links = new Array()
-	links[0] = "http://www.google.com"
-	links[1] = "http://www.yahoo.com"
-	links[2] = "http://www.youtube.com"
-	links[3] = "http://www.ntut.edu.tw"
-	//呼叫確認視窗
-	var answer = confirm(messages[myrandom])
-	//重點來了，如果點「是」，就連去該變數所指的網站
-	if (answer){
-		window.location = links[myrandom]
-	} 
-}
-</script>
+<link type="text/css" href="csshake.css">
+<div class="shake shake-hard">
+<h1 align="center" <font> ! </h1></div>
+</div>
 
-<table width="100%" height ="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center" valign="middle">
-		<p>Hello, world. - from JC ;) 揪瞇</p>
-		<a href="javascript:AlertIt();">
-			<img src="images/dAbHead.png" width="33%" height="auto">
-			<p>按我</p>
-		</a>
-	</td>
-  </tr>
-</table>
+
+<script type="text/javascript">
+function AlertIt() {
+	//亂數
+	var myrandom=Math.round(Math.random()*2)
+	//訊息清單
+	var messages=new Array()
+	messages[0]="有新點子!"
+	messages[1]="缺乏靈感嗎?"
+	messages[2]="要來點不一樣的嗎?"
+	//連結清單
+	var links=new Array()
+	links[0]="https://www.zeczec.com/"
+	links[1]="http://www.mydesy.com/"
+	links[2]="http://www.theuselessweb.com/"
+	//點下去要顯示
+	var answer = confirm (messages[myrandom])
+	//如果點「是」
+	if (answer)
+	window.location=links[myrandom]
+}
+</script> 
+
+<marquee direction="right">
+<a href="javascript:AlertIt();"><img src="n3.png" width="130" height="87" alt="a" /></a>
+</marquee>
+
+
+<marquee scrollamount behavior="slide" scrollamount="6"  >
+<a href="javascript:AlertIt();"><img src="a.png" width="130" height="87" alt="a" /></a>
+</marquee>
+
+<marquee behavior="alternate" >
+<a href="javascript:AlertIt();"><img src="a1.png" width="130" height="67" alt="a" /></a>
+</marquee>
+
+<marquee direction="left" >
+<a href="javascript:AlertIt();"><img src="a2.png" width="150" height="45" alt="a" /></a>
+</marquee>
+
+
+
 
 
 </body>
